@@ -1,0 +1,89 @@
+:root {
+    --dark-green: #1b4332;
+    --leaf-green: #2d6a4f;
+    --accent: #d8f3dc;
+    --text: #333;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo { font-weight: bold; font-size: 1.5rem; color: var(--leaf-green); }
+.nav-links a { text-decoration: none; color: var(--text); margin-left: 20px; font-weight: 600; }
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1500');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 { font-size: 3.5rem; margin: 0; }
+.cta-btn { 
+    background: var(--leaf-green); color: white; border: none; 
+    padding: 15px 30px; border-radius: 30px; cursor: pointer; font-size: 1rem;
+}
+
+/* Products Grid */
+.products { padding: 50px 8%; background: #f9f9f9; }
+.product-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; 
+}
+
+/* Card Style */
+.card { 
+    background: white; border-radius: 15px; overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s;
+}
+.card:hover { transform: translateY(-10px); }
+
+.img-zoom { height: 200px; overflow: hidden; }
+.img-zoom img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.card:hover img { transform: scale(1.1); }
+
+.card-body { padding: 20px; text-align: center; }
+.price { font-size: 1.3rem; color: var(--leaf-green); font-weight: bold; }
+.add-btn { background: var(--dark-green); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+
+/* Cart Styling */
+.cart-container { padding: 50px 8%; text-align: center; }
+#cartList { list-style: none; padding: 0; }
+.total { font-size: 1.5rem; font-weight: bold; color: var(--leaf-green); }
+
+footer { background: var(--dark-green); color: white; padding: 40px; text-align: center; }
+.img-zoom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(1.1); /* Makes the greens look fresher */
+    transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.card:hover img {
+    transform: scale(1.15) rotate(2deg); /* Adds a playful, fresh movement */
+}
