@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Leafy Vegetables | Farm Fresh</title>
+    <link rel="stylesheet" href="leafy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">GREEN LEAF 🥬</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Nature’s Best Greens</h1>
+            <p>Direct from Farm to Your Kitchen within 24 Hours</p>
+            <button class="cta-btn" onclick="scrollToProducts()">Order Now</button>
+        </div>
+    </header>
+
+    <section id="products" class="products">
+        <h2 class="section-title">Our Fresh Collection</h2>
+        <div class="product-grid">
+            
+            <div class="card">
+                <div class="img-zoom">
+                    <img src="https://media.gettyimages.com/id/169983791/photo/spinach.jpg?s=612x612&w=0&k=20&c=1L9qJL3BTYurO97HyExfESkKyFREzR35EReHHlh9ibk=" alt="Spinach">
+                </div>
+                <div class="card-body">
+                    <h3>Spinach (Palakura)</h3>
+                    <p class="price">₹20 <span>/ bunch</span></p>
+                    <button class="add-btn" onclick="addToCart('Spinach', 20)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-zoom">
+                    <img src="https://media.istockphoto.com/id/624698704/photo/parsley-bunch.jpg?s=612x612&w=0&k=20&c=KB-nSLNLPa8nSPNvVYM96N6X3WLSbz8EwFQfjCJnAlA=" alt="Coriander">
+                </div>
+                <div class="card-body">
+                    <h3>Coriander (Kothimeera)</h3>
+                    <p class="price">₹15 <span>/ bunch</span></p>
+                    <button class="add-btn" onclick="addToCart('Coriander', 15)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-zoom">
+                 <img src="images/leafy.png" alt="Leaf Image" width="300">
+                </div>
+                <div class="card-body">
+                    <h3>Methi (Menthi Koora)</h3>
+                    <p class="price">₹25 <span>/ bunch</span></p>
+                    <button class="add-btn" onclick="addToCart('Methi', 25)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-zoom">
+                    <img src="https://media.istockphoto.com/id/1372304685/photo/bunch-of-fresh-green-fenugreek-vegetable-healthy-and-nutritious-for-sale-at-a-market-in-india.jpg?s=1024x1024&w=is&k=20&c=6Bt2ui0W97lmG2G3oor_t1VRuaVTmHDYYeusdkM5Go0=" alt="Methi">
+                </div>
+                <div class="card-body">
+                    <h3>Methi (chuka kura)</h3>
+                    <p class="price">₹25 <span>/ bunch</span></p>
+                    <button class="add-btn" onclick="addToCart('Methi', 25)">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cart-container">
+        <h2>🛒 Your Shopping Cart</h2>
+        <div id="cartContent">
+            <ul id="cartList"></ul>
+            <hr>
+            <p class="total">Total: ₹<span id="totalPrice">0</span></p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-info">
+            <p>📞 Order via Phone: <strong>8500820813</strong></p>
+            <a href=" #whatsapp.com">Whatsapp</a>
+            <p>🚚 Fast & Free Home Delivery</p>
+            <p>© 2026 Green Leafy Vegetables</p>
+        </div>
+    </footer>
+
+    <script src="leafy.js"></script>
+    <h2>🛒 Your Shopping Cart</h2>
+
+</body>
+</html>
